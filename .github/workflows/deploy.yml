@@ -3,7 +3,7 @@ name: Deploy to ECS
 on:
   push:
     branches:
-      - main  # Adjust to your default branch name
+      - master  # Adjust to your default branch name
 
 jobs:
   deploy:
@@ -28,6 +28,6 @@ jobs:
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: ecs-task-definition.json
-          service: your-ecs-service-name
-          cluster: your-ecs-cluster-name
+          service: my-app-service
+          cluster: my-app-cluster
           wait-for-service-stability: true

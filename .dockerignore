@@ -1,0 +1,37 @@
+# Ignore build output directories
+/bin/
+/obj/
+
+# Ignore IDE-specific files and directories
+/.vs/
+/.vscode/
+/*.suo
+/*.user
+/*.userosscache
+/*.sln.docstates
+
+# Ignore configuration files that might contain sensitive information
+/*.env
+/secrets.dev.yaml
+/values.dev.yaml
+
+# Ignore package managers
+/node_modules/
+/npm-debug.log
+
+# Ignore Docker and related files
+/docker-compose*
+/Dockerfile*
+
+# Ignore other common temporary files
+*.dbmdl
+*.jfm
+*.log
+
+# Exclude all files in the git directory and related files
+.git/
+.gitignore
+
+# Keep necessary files
+!/LICENSE
+!/README.md

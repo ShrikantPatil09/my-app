@@ -13,6 +13,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Set up AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}  # Your IAM role ARN
+          aws-region: eu-north-1  # Specify the region here
+
       - name: Log in to Amazon ECR
         uses: aws-actions/amazon-ecr-login@v1
         env:

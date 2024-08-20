@@ -17,6 +17,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: arn:aws:iam::908027411127:role/GitHubActionsECRandECSRole  # Your IAM role ARN
+          audience: sts.amazonaws.com
           aws-region: eu-north-1  # Specify the region here
 
       - name: Log in to Amazon ECR

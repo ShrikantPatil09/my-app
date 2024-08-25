@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "my-container",
-      "image": "${ECR_REPOSITORY_URI}",
+      "image": "908027411127.dkr.ecr.eu-north-1.amazonaws.com/my-namespace/my-app-repo:latest",
       "memory": 512,
       "cpu": 256,
       "essential": true,

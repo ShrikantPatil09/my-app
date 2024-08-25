@@ -1,5 +1,9 @@
 {
   "family": "my-task-family",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
   "containerDefinitions": [
     {
       "name": "my-container",
